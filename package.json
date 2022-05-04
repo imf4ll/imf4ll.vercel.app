@@ -15,10 +15,9 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
-    "dev": "npm run build && react-scripts start",
-    "react:build": "npm run build && GENERATE_SOURCEMAP=false react-scripts build",
-    "start": "npm run build && serve -s build/ -p 8080",
-    "build": "tsc"
+    "dev": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "start": "serve -s build -p 8080"
   },
   "browserslist": {
     "production": [
