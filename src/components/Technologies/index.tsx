@@ -12,9 +12,11 @@ export const Technologies = () => {
     const [ view, setView ] = useState<number>(0);
 
     useEffect(() => {
-        setView(window.innerWidth);
+        window.addEventListener('resize', () => setView(window.innerWidth))
+        
+        return () => window.removeEventListener('resize', () => setView(window.innerWidth));
 
-    }, [ window.innerWidth ]);
+    }, []);
 
     useEffect(() =>
         setScrollX(carousel.current.scrollWidth - window.innerWidth + 50)

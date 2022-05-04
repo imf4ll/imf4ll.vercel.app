@@ -9,9 +9,11 @@ export const Menu = () => {
     const [ menuOpen, setMenuOpen ] = useState<boolean>(false);
 
     useEffect(() => {
-        setViewSize(window.innerWidth);
+        window.addEventListener('resize', () => setViewSize(window.innerWidth))
+        
+        return () => window.removeEventListener('resize', () => setViewSize(window.innerWidth));
 
-    }, [ window.innerWidth ]);
+    }, []);
 
     const handleScroll = (element: string) => {
         setMenuOpen(false);
