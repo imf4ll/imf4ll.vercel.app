@@ -5,7 +5,7 @@ import MenuIcon from '../../assets/menu.svg';
 import Close from '../../assets/close.svg';
 
 export const Menu = () => {
-    const [ viewSize, setViewSize ] = useState<number>(0);
+    const [ viewSize, setViewSize ] = useState<number>(window.innerWidth);
     const [ menuOpen, setMenuOpen ] = useState<boolean>(false);
 
     useEffect(() => {
@@ -13,7 +13,9 @@ export const Menu = () => {
         
         return () => window.removeEventListener('resize', () => setViewSize(window.innerWidth));
 
-    }, []);
+    });
+
+    console.log(viewSize)
 
     const handleScroll = (element: string) => {
         setMenuOpen(false);
