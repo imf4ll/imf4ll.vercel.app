@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
 import Logo from '../../assets/logo.png';
-import Background from '../../assets/background.jpg';
 
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     text-align: center;
-    background: url(${ Background });
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #000;
+    position: relative;
 
     img:first-of-type {
         border-radius: 50%;
@@ -20,7 +18,11 @@ export const Container = styled.div`
         transition: all ease 1s;
     }
 
-    img:hover {
+    img:not(:last-child) {
+        margin-top: 0;
+    }
+
+    img:hover:not(:last-child) {
         transform: scale(1.1);
     }
 
@@ -65,6 +67,14 @@ export const Container = styled.div`
         z-index: -1;
     }
 
+    .wave {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        animation: waves infinite 4s;
+        z-index: 0;
+    }
+
     h1, h2 {
         font-family: 'JetBrains Mono', monospace;
         color: white;
@@ -79,6 +89,16 @@ export const Container = styled.div`
         font-size: 14pt;
         font-weight: 400;
         margin: 25px 0 -10px 0;
+    }
+
+    @keyframes waves {
+        50% {
+            transform: scaleX(1.3);     
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
     }
 
     @keyframes luminous {
@@ -96,8 +116,6 @@ export const Container = styled.div`
     }
 
     @media (max-width: 800px) {
-        background-position: top;
-
         .logo {
             margin-top: 10rem;
             margin-bottom: 12rem;
@@ -108,10 +126,6 @@ export const Container = styled.div`
         h2 {
             font-size: 15pt;
             margin-top: 50px;
-        }
-
-        img:not(:first-of-type) {
-            width: 45px;
         }
     }
 

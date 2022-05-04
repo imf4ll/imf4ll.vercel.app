@@ -9,6 +9,7 @@ export const MenuDesktop = styled.nav`
     top: 0;
     left: 0;
     margin-top: 0.5rem;
+    z-index: 999;
 
     ul {
         display: flex;
@@ -22,8 +23,8 @@ export const MenuDesktop = styled.nav`
         margin-right: 0;
         color: #fff;
         cursor: pointer;
-        font-size: 14pt;
-        font-weight: 600;
+        font-size: 12pt;
+        font-weight: 500;
         transition: all ease 500ms;
     }
 

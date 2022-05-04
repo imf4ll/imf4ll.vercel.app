@@ -12,10 +12,7 @@ export const Menu = () => {
         window.addEventListener('resize', () => setViewSize(window.innerWidth))
         
         return () => window.removeEventListener('resize', () => setViewSize(window.innerWidth));
-
     });
-
-    console.log(viewSize)
 
     const handleScroll = (element: string) => {
         setMenuOpen(false);
