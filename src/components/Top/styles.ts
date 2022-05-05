@@ -131,6 +131,7 @@ export const Container = styled.div`
 
     @media (max-width: 800px) and (orientation: landscape) {
         background: #000;
+        height: 180vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -139,7 +140,11 @@ export const Container = styled.div`
         gap: 10%;
 
         div img:first-of-type {
-            margin-top: 0;
+            margin-top: -5rem;
+        }
+
+        h2 {
+            margin-top: -5rem;
         }
     }
 `;

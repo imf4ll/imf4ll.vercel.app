@@ -19,6 +19,7 @@ export const About = () => {
                     alt="A programmer"
                     title="Programmer by Undraw"
                     width="40%"
+                    className="programmer"
                 />
                 <div className="about">
                     <p data-aos="fade-left">

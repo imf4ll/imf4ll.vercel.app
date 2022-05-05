@@ -117,17 +117,17 @@ export const Container = styled.div`
     }
 
     @media (max-width: 800px) and (orientation: landscape) {
-        height: calc(100vh + 5rem);
+        height: calc(100vh + 10rem);
 
         h1 {
-            margin-top: 40px;
+            margin-top: 0;
         }
 
         section {
-            margin-top: -50px;
+            margin-top: 0;
         }
 
-        section img {
+        .programmer {
             display: none;
         }
     }
