@@ -19,13 +19,19 @@ export const Container = styled.div`
         margin-bottom: -5rem;
     }
 
+    h2 {
+        color: white;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 600;
+        font-size: 20pt;
+        margin-top: 0.5rem;
+    }
+
     .about {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 100%;
-        gap: 10px;
         z-index: 99;
     }
 
@@ -38,12 +44,21 @@ export const Container = styled.div`
         text-align: center;
     }
 
-    .about img {
+    .contacts {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contacts img {
+        margin: 0 1rem;
+        background-color: rgb(12, 12, 12);
+        padding: 0.5rem;
+        border-radius: 100%;
         transition: all ease 1s;
         cursor: pointer;
     }
 
-    .about img:hover {
+    .contacts img:hover {
         transform: scale(1.1);
     }
 
@@ -68,7 +83,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 800px) {
-        height: calc(100vh + 10rem);
+        height: calc(100vh + 15rem);
 
         .about img {
             width: 36px;
@@ -76,7 +91,11 @@ export const Container = styled.div`
         }
 
         h1 {
-            margin-top: 15%;
+            margin-top: 3rem;
+        }
+
+        h2 {
+            margin-top: 3rem;
         }
 
         section {

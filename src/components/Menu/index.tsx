@@ -18,7 +18,9 @@ export const Menu = () => {
         setMenuOpen(false);
 
         window.scrollTo({
-            top: document.getElementById(element).offsetTop,
+            top: element !== 'contacts'
+                ? document.getElementById(element).offsetTop
+                : document.getElementById(element).offsetTop + 500,
             behavior: 'smooth',
         });
     }
@@ -32,6 +34,7 @@ export const Menu = () => {
                             <li onClick={ () => handleScroll('about') }>About me</li>
                             <li onClick={ () => handleScroll('tech') }>Technologies</li>
                             <li onClick={ () => handleScroll('projects') }>Projects</li>
+                            <li onClick={ () => handleScroll('contacts') }>Contacts</li>
                         </ul>
                     </MenuDesktop>
                 ) : (
@@ -56,6 +59,7 @@ export const Menu = () => {
                                         <li onClick={ () => handleScroll('about') }>About me</li>
                                         <li onClick={ () => handleScroll('tech') }>Technologies</li>
                                         <li onClick={ () => handleScroll('projects') }>Projects</li>
+                                        <li onClick={ () => handleScroll('contacts') }>Contacts</li>
                                     </ul>
                                 </>
                             )
