@@ -1,12 +1,9 @@
 import { createRoot } from 'react-dom/client';
 
-import { GlobalStyle } from './styles/globalStyle';
+import './styles/global.css';
 
 import Home from './pages/Home';
 
-createRoot(document.querySelector('#root')).render(
-    <>
-        <GlobalStyle />
-        <Home />
-    </>
+createRoot(document.querySelector('#root')!).render(
+    <Home />
 );

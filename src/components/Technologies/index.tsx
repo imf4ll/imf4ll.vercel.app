@@ -19,32 +19,34 @@ export const Technologies = () => {
     }, []);
 
     useEffect(() =>
-        setScrollX(carousel.current.scrollWidth - window.innerWidth + 50)
+        setScrollX(carousel.current!.scrollWidth - window.innerWidth + 50)
 
     , []);
 
     const handleLeft = () => {
-        const round = view > 800 ? Math.round(carousel.current.scrollWidth / 2) : Math.round(window.innerWidth * 2);
+        const scrollWidth = carousel.current!.scrollWidth;
+        const round = view > 800 ? Math.round(scrollWidth / 2) : Math.round(window.innerWidth * 2);
         const x = scrollX + round;
 
-        if (x < carousel.current.scrollWidth - window.innerWidth) {
+        if (x < scrollWidth - window.innerWidth) {
             setScrollX(x);
 
         } else {
-            setScrollX(carousel.current.scrollWidth - window.innerWidth + 50);
+            setScrollX(scrollWidth - window.innerWidth + 50);
 
         }
     }
 
     const handleRight = () => {
-        const round = view > 800 ? Math.round(carousel.current.scrollWidth / 2) : Math.round(window.innerWidth * 2);
+        const scrollWidth = carousel.current!.scrollWidth;
+        const round = view > 800 ? Math.round(scrollWidth / 2) : Math.round(window.innerWidth * 2);
         const x = scrollX - round;
 
-        if (x > carousel.current.scrollWidth * -1 + window.innerWidth) {
+        if (x > scrollWidth * -1 + window.innerWidth) {
             setScrollX(x);
 
         } else {
-            setScrollX(carousel.current.scrollWidth * -1 + window.innerWidth - 50);
+            setScrollX(scrollWidth * -1 + window.innerWidth - 50);
 
         }
     }

@@ -1,5 +1,6 @@
 node_modules
 build
+dist
 .yarn/*
 !.yarn/cache
 !.yarn/unplugged

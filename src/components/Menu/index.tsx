@@ -19,8 +19,8 @@ export const Menu = () => {
 
         window.scrollTo({
             top: element !== 'contacts'
-                ? document.getElementById(element).offsetTop
-                : document.getElementById(element).offsetTop + 500,
+                ? document.getElementById(element)!.offsetTop
+                : document.getElementById(element)!.offsetTop + 500,
             behavior: 'smooth',
         });
     }
