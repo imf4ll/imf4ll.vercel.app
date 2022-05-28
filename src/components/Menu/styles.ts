@@ -4,7 +4,6 @@ export const Container = styled.div`
 `;
 
 export const MenuDesktop = styled.nav`
-    font-family: 'JetBrains Mono', monospace;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,21 +22,16 @@ export const MenuDesktop = styled.nav`
         margin-right: 0;
         color: #fff;
         cursor: pointer;
-        font-size: 12pt;
+        font-size: 13pt;
         font-weight: 500;
         transition: all ease 500ms;
-    }
-
-    ul li:hover {
-        transform: scale(1.1);
-        opacity: 0.8;
     }
 
     ul li:after {
         content: '';
         display: block;
         transform: scaleX(0);
-        border-bottom: 2px solid rgb(150, 150, 150);
+        border-bottom: 2px solid #333;
         padding: 3px;
         transition: all ease 500ms;
     }
@@ -52,18 +46,15 @@ interface MenuMobileProps {
 }
 
 export const MenuMobile = styled.div<MenuMobileProps>`
-    font-family: 'JetBrains Mono', monospace;
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     top: 0;
     left: 0;
     z-index: 999;
     background-color: ${ props => props.open ? 'rgba(20, 20, 20, 0.7)' : 'transparent' };
     width: 100vw;
-    height: 35vh;
+    height: 100vh;
 
     .menuIcon {
         position: absolute;
@@ -80,8 +71,8 @@ export const MenuMobile = styled.div<MenuMobileProps>`
     ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        margin-top: 6rem;
         padding: 0;
     }
 
@@ -91,7 +82,7 @@ export const MenuMobile = styled.div<MenuMobileProps>`
         margin-right: 0;
         color: #fff;
         cursor: pointer;
-        font-size: 14pt;
+        font-size: 18pt;
         font-weight: 600;
         transition: all ease 500ms;
     }

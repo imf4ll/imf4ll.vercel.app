@@ -1,7 +1,12 @@
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
+
+import { GlobalStyle } from './styles/globalStyle';
+
 import Home from './pages/Home';
 
-render (
-    <Home />,
-    document.querySelector('#root')
+createRoot(document.querySelector('#root')).render(
+    <>
+        <GlobalStyle />
+        <Home />
+    </>
 );

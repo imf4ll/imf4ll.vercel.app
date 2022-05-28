@@ -5,7 +5,6 @@ interface TechProps {
 }
 
 export const Container = styled.div`
-    font-family: 'JetBrains Mono', monospace;
     width: 100vw;
     height: 100vh;
     background: #000;
@@ -18,7 +17,6 @@ export const Container = styled.div`
 
     h1:first-child {
         color: white;
-        font-family: 'JetBrains Mono', monospace;
         font-weight: 700;
         font-size: 30pt;
         margin-top: 4rem;

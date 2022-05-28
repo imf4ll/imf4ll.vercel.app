@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    font-family: 'JetBrains Mono', monospace;
     width: 100vw;
     height: auto;
     background: rgb(20, 20, 20);
@@ -12,7 +11,6 @@ export const Container = styled.div`
 
     h1 {
         color: white;
-        font-family: 'JetBrains Mono', monospace;
         font-weight: 700;
         font-size: 30pt;
         margin: 4rem;
@@ -64,14 +62,12 @@ export const Container = styled.div`
     }
 
     section h2 {
-        font-family: 'JetBrains Mono', monospace;
         font-weight: 600;
         font-size: 18pt;
         padding-top: 5%;
     }
     
     section p {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 15pt;
         width: 90%;
         margin: auto;

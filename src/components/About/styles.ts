@@ -12,7 +12,6 @@ export const Container = styled.div`
 
     h1 {
         color: white;
-        font-family: 'JetBrains Mono', monospace;
         font-weight: 700;
         font-size: 30pt;
         margin: 4rem;
@@ -21,7 +20,6 @@ export const Container = styled.div`
 
     h2 {
         color: white;
-        font-family: 'JetBrains Mono', monospace;
         font-weight: 600;
         font-size: 20pt;
         margin-top: 0.5rem;
@@ -36,7 +34,6 @@ export const Container = styled.div`
     }
 
     .about p {
-        font-family: 'JetBrains Mono', monospace !important;
         font-size: 14pt;
         font-weight: 400;
         color: white;
@@ -74,6 +71,16 @@ export const Container = styled.div`
     section p span {
         font-size: 20pt;
         font-weight: 700;
+    }
+
+    section p a {
+        text-decoration: none;
+        color: #666;
+        transition: all ease 500ms;
+    }
+
+    section p a:hover {
+        opacity: 0.7;
     }
 
     .wave {

@@ -76,7 +76,6 @@ export const Container = styled.div`
     }
 
     h1, h2 {
-        font-family: 'JetBrains Mono', monospace;
         color: white;
     }
 

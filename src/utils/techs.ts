@@ -73,4 +73,10 @@ export const techs = [
         description: 'Distributed version control system.',
         color: '#f34f29',
     },
+    {
+        url: 'https://cdn.worldvectorlogo.com/logos/prisma-3.svg',
+        title: 'Prisma',
+        description: 'An ORM to work with databases.',
+        color: '#fff',
+    }
 ]

@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../../global.css';
 import { Container } from './styles';
 
 // Components
