@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
     * {
-        font-family: 'Mulish', sans-serif;
+        font-family: 'JetBrains Mono', monospace;
     }
 
     *::-webkit-scrollbar {
