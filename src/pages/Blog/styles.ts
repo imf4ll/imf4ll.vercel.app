@@ -20,10 +20,6 @@ export const Container = styled.div`
     img {
         border-radius: 5px;
     }
-
-    @media (max-width: 800px) {
-        
-    }
 `;
 
 export const Featured = styled.div`

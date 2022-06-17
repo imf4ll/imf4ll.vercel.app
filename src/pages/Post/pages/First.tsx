@@ -1,5 +1,12 @@
+import { Helmet } from 'react-helmet';
+
 export const First = () => (
     <>
+        <Helmet>
+            <meta name="description" content="First ever post" />
+            <meta name="image" content="https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        </Helmet>
+
         <div className="title">
             <h1>First post ever!! :)</h1>
             <span>June 16 - 21:25</span>
