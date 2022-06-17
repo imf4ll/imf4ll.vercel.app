@@ -29,7 +29,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "react:build": "react-scripts build",
+    "react:serve": "serve -s build/ -p 3000"
   },
   "browserslist": {
     "production": [
