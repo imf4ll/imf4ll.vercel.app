@@ -20,12 +20,14 @@ export const Post = () => {
     }
 
     return (
-        <Container>
+        <>
             <Back path='/blog' />
-
-            <PostContainer>
-                <Current />
-            </PostContainer>
-        </Container>
+        
+            <Container>
+                <PostContainer>
+                    <Current />
+                </PostContainer>
+            </Container>
+        </>
     );
 }

@@ -15,6 +15,7 @@ export const Container = styled.div`
     transition: all ease 300ms;
     font-weight: 500;
     cursor: pointer;
+    z-index: 999;
 
     :hover {
         opacity: 0.85;
