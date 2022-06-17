@@ -1,5 +1,5 @@
 // @ts-ignore
-import MetaTags from 'react-meta-tags'
+import MetaTags from 'react-meta-tags';
 
 export const First = () => (
     <>
