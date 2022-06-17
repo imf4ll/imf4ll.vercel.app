@@ -14,6 +14,8 @@ export const Menu = () => {
         return () => window.removeEventListener('resize', () => setViewSize(window.innerWidth));
     });
 
+    const handleVisit = (path: string) => window.location.href = path;
+
     const handleScroll = (element: string) => {
         setMenuOpen(false);
 
@@ -34,6 +36,7 @@ export const Menu = () => {
                             <li onClick={ () => handleScroll('about') }>About me</li>
                             <li onClick={ () => handleScroll('tech') }>Technologies</li>
                             <li onClick={ () => handleScroll('projects') }>Projects</li>
+                            <li onClick={ () => handleVisit('/blog') }>Blog</li>
                         </ul>
                     </MenuDesktop>
                 ) : (
@@ -58,6 +61,7 @@ export const Menu = () => {
                                         <li onClick={ () => handleScroll('about') }>About me</li>
                                         <li onClick={ () => handleScroll('tech') }>Technologies</li>
                                         <li onClick={ () => handleScroll('projects') }>Projects</li>
+                                        <li onClick={ () => handleVisit('/blog') }>Blog</li>
                                     </ul>
                                 </>
                             )
