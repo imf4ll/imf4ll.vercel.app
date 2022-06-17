@@ -5,8 +5,13 @@ export const First = () => (
     <>
         <MetaTags>
             <meta name="description" content="First post ever!!" />
-            <title>First post ever | z3oxs</title>
+            <meta name="og:description" content="First post ever!!" />
             <meta name="image" content="https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <meta name="og:image" content="https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <meta name="og:site_name" content="z3oxs's Blog" />
+            <meta name="title" content="First post ever" />
+            <meta name="og:title" content="First post ever" />
+            <title>First post ever | z3oxs</title>
         </MetaTags>
 
         <div className="title">

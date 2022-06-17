@@ -1,9 +1,24 @@
+// @ts-ignore
+import MetaTags from 'react-meta-tags';
+
 import { CodeDrop } from '../../../components/CodeDrop';
 
 import Screenshot01 from '../assets/Calling-C-From-Golang-Screenshot-01.png';
 
 export const CallingCFromGolang = () => (
     <>
+        <MetaTags>
+            <meta name="description" content="First post ever!!" />
+            <meta name="og:description" content="First post ever!!" />
+            <meta name="image" content="" />
+            <meta name="og:image" content="https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <meta name="og:image" content="https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <meta name="og:site_name" content="z3oxs's Blog" />
+            <meta name="title" content="Calling C code from Golang" />
+            <meta name="og:title" content="Calling C code from Golang" />
+            <title>Calling C code from Golang | z3oxs</title>
+        </MetaTags>
+
         <div className="title">
             <h1>Calling C code from Golang</h1>
             <span>June 16 22:30</span>
