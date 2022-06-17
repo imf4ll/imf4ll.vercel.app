@@ -2,8 +2,8 @@ import { createRoot } from 'react-dom/client';
 
 import './styles/global.css';
 
-import Home from './pages/Home';
+import { Router } from './routes';
 
-createRoot(document.querySelector('#root')!).render(
-    <Home />
+createRoot(document.querySelector('#root')!).render (
+    <Router />
 );
