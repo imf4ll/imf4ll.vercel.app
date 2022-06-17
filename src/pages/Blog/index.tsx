@@ -5,7 +5,7 @@ import { Back } from '../../components/Back';
 
 export const Blog = () => (
     <>
-        <Back path='/' />
+        <Back path="/" />
     
         <Container>
             <Featured
