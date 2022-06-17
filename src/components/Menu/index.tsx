@@ -36,7 +36,7 @@ export const Menu = () => {
                             <li onClick={ () => handleScroll('about') }>About me</li>
                             <li onClick={ () => handleScroll('tech') }>Technologies</li>
                             <li onClick={ () => handleScroll('projects') }>Projects</li>
-                            <li onClick={ () => handleVisit('/blog') }>Blog</li>
+                            { /* <li onClick={ () => handleVisit('/blog') }>Blog</li> */ }
                         </ul>
                     </MenuDesktop>
                 ) : (
@@ -61,7 +61,7 @@ export const Menu = () => {
                                         <li onClick={ () => handleScroll('about') }>About me</li>
                                         <li onClick={ () => handleScroll('tech') }>Technologies</li>
                                         <li onClick={ () => handleScroll('projects') }>Projects</li>
-                                        <li onClick={ () => handleVisit('/blog') }>Blog</li>
+                                        { /* <li onClick={ () => handleVisit('/blog') }>Blog</li> */ }
                                     </ul>
                                 </>
                             )
