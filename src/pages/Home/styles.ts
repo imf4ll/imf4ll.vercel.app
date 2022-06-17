@@ -183,6 +183,7 @@ export const Top = styled.div`
     .scroll {
         cursor: pointer;
         animation: breath 1.5s infinite;
+        z-index: 999;
     }
 
     .scroll:hover {

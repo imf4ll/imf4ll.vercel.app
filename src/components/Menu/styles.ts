@@ -8,6 +8,7 @@ export const MenuDesktop = styled.nav`
     top: 0;
     left: 0;
     margin-top: 0.5rem;
+    margin-left: 1rem;
     z-index: 999;
 
     ul {
@@ -18,26 +19,20 @@ export const MenuDesktop = styled.nav`
 
     ul li {
         list-style: none;
-        margin: 0 2rem;
-        margin-right: 0;
+        margin: 0 0.5rem;
         color: #fff;
         cursor: pointer;
         font-size: 13pt;
         font-weight: 500;
-        transition: all ease 500ms;
+        padding: 0.15rem 0.5rem;
+        transition: all ease 350ms;
     }
 
-    ul li:after {
-        content: '';
-        display: block;
-        transform: scaleX(0);
-        border-bottom: 2px solid #333;
-        padding: 3px;
-        transition: all ease 500ms;
-    }
-
-    ul li:hover:after {
-        transform: scaleX(1);
+    ul li:hover {
+        color: #000;
+        background-color: #fff;
+        border-radius: 4px;
+        transform: scale(1.1);
     }
 `;
 

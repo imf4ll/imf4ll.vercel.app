@@ -40,7 +40,12 @@ export const Menu = () => {
                         </ul>
                     </MenuDesktop>
                 ) : (
-                    <MenuMobile open={ menuOpen }>
+                    <MenuMobile
+                        open={ menuOpen }
+                        style={
+                            menuOpen ? { height: '100vh' } : { height: 'auto' }
+                        }
+                    >
                         { 
                             !menuOpen ?
                                 <img
