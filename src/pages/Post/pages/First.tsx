@@ -1,15 +1,17 @@
-import { Helmet } from 'react-helmet';
+// @ts-ignore
+import MetaTags from 'react-meta-tags'
 
 export const First = () => (
     <>
-        <Helmet>
-            <meta name="description" content="First ever post" />
+        <MetaTags>
+            <meta name="description" content="First post ever!!" />
+            <title>First post ever | z3oxs</title>
             <meta name="image" content="https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </Helmet>
+        </MetaTags>
 
         <div className="title">
             <h1>First post ever!! :)</h1>
-            <span>June 16 - 21:25</span>
+            <span>June 16 21:25</span>
         </div>
 
         <hr />

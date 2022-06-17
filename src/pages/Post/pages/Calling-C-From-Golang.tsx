@@ -1,19 +1,12 @@
-import { Helmet } from 'react-helmet';
-
 import { CodeDrop } from '../../../components/CodeDrop';
 
 import Screenshot01 from '../assets/Calling-C-From-Golang-Screenshot-01.png';
 
 export const CallingCFromGolang = () => (
     <>
-        <Helmet>
-            <meta name="description" content="A simple guide of how to use C code natively on Golang." />
-            <meta name="image" content="https://images.pexels.com/photos/257881/pexels-photo-257881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </Helmet>
-
         <div className="title">
             <h1>Calling C code from Golang</h1>
-            <span>June 16 - 22:30</span>
+            <span>June 16 22:30</span>
         </div>
 
         <div className="tags">
