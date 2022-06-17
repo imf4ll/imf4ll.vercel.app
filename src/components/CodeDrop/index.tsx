@@ -14,7 +14,8 @@ export const CodeDrop = ({ children, lang }: Props) => {
                 fontFamily: 'Inter',
                 fontWeight: 500,
                 fontSize: 15,
-                margin: '2.5rem 0',
+                margin: '2.5rem auto',
+                width: '80%',
             }}
             style={ dracula }
             PreTag="div"

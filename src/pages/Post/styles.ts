@@ -55,7 +55,7 @@ export const PostContainer = styled.div`
     .pilot {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         span {
             margin: 0.5rem 0 0 1rem;
@@ -70,6 +70,13 @@ export const PostContainer = styled.div`
             :hover {
                 opacity: 0.8;
             }
+        }
+    }
+
+    .content {
+        p {
+            margin: 1rem auto;
+            width: 85%;
         }
     }
 
@@ -113,9 +120,8 @@ export const PostContainer = styled.div`
         .content {
             p {
                 font-size: 11.5pt;
-                width: 90%;
-                margin: 0 auto;
-                margin-top: 1rem;
+                width: 95%;
+                margin: 1rem auto;
             }
         }
     }
