@@ -78,5 +78,17 @@ export const techs = [
         title: 'Prisma',
         description: 'An ORM to work with databases.',
         color: '#fff',
-    }
-]
+    },
+    {
+        url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
+        title: 'Rust',
+        description: 'Safe, concurrent and practical programming language',
+        color: '#B7410E',
+    },
+    {
+        url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg',
+        title: 'PostgreSQL',
+        description: 'SQL-based database',
+        color: '#336791',
+    },
+];
