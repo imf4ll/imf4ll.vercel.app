@@ -1,9 +1,16 @@
 import { createRoot } from 'react-dom/client';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import './styles/global.css';
 
-import { Router } from './routes';
+import { Home } from './pages/Home';
+import { NotFound } from './pages/NotFound';
 
 createRoot(document.querySelector('#root')!).render (
-    <Router />
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={ <Home /> } />
+            <Route path="/*" element={ <NotFound /> } />
+        </Routes>
+    </BrowserRouter>
 );

@@ -6,3 +6,10 @@
 *::-webkit-scrollbar-thumb {
     background: rgb(35, 35, 35);
 }
+
+html, body {
+    background: #080808;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}

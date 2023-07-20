@@ -1,7 +1,7 @@
 {
   "name": "website",
-  "version": "1.0.2",
-  "repository": "https://github.com/z3ox1s/z3ox1s-website.git",
+  "version": "2.0",
+  "repository": "https://github.com/imf4ll/imf4ll.vercel.app.git",
   "author": "z3oxs <z3ox1s@protonmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -12,7 +12,6 @@
     "react-meta-tags": "^1.0.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
-    "react-syntax-highlighter": "^15.5.0",
     "serve": "^13.0.2",
     "styled-components": "^5.3.5"
   },
