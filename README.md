@@ -5,7 +5,7 @@
 ## 🔧 Setup:
 - Clone this repository:<br>
 ```bash
-git clone https://github.com/z3oxs/z3oxs.vercel.app
+git clone https://github.com/imf4ll/imf4ll.vercel.app
 cd z3oxs.vercel.app
 ```
 

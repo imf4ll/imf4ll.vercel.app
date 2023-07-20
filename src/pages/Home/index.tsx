@@ -1,6 +1,9 @@
 // @ts-nocheck
 
 import Arrow from '../../assets/arrow.svg';
+import Moo from '../../assets/moo.gif';
+import Rough from '../../assets/rough.gif';
+import Ghost from '../../assets/ghost.gif';
 
 import { Container } from './styles';
 
@@ -9,19 +12,19 @@ export const Home = () => {
         {
             name: 'Moo',
             description: 'Streams music directly from YouTube',
-            image: '/public/moo.gif',
+            image: Moo,
             repo: 'https://github.com/imf4ll/moo'
         },
         {
             name: 'Rough',
             description: 'GTK Based app launcher for Linux',
-            image: '/public/rough.gif',
+            image: Rough,
             repo: 'https://github.com/imf4ll/rough'
         },
         {
             name: 'Ghost',
             description: 'Tool to take screenshots from terminal',
-            image: '/public/ghost.gif',
+            image: Ghost,
             repo: 'https://github.com/imf4ll/ghost'
         },
     ];

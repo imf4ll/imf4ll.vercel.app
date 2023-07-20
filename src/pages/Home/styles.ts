@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Background from '../../assets/background.gif';
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -61,7 +63,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url(/public/background.gif);
+        background-image: url(${ Background });
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
