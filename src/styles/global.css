@@ -1,15 +1,19 @@
 *::-webkit-scrollbar {
-    background-color: rgb(12, 12, 12);
-    width: 10px;
+  background-color: rgb(12, 12, 12);
+  width: 10px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background: rgb(35, 35, 35);
+  background: rgb(35, 35, 35);
 }
 
 html, body {
-    background: #080808;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+  background: #16141B;
+  font-family: 'JetBrains Mono', sans-serif;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
